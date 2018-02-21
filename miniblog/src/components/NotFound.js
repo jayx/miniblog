@@ -4,16 +4,16 @@ import SiteContent from './SiteContent';
 import SiteFooter from './SiteFooter';
 import '../css/miniblog.css';
 
-class App extends React.Component {
+class NotFound extends React.Component {
   render() {
     return (
       <div>
         <SiteHeader tagline="Fresh articles in minutes" />
-        <SiteContent article="Home page content here" />
+        <SiteContent article="Sorry - I couldn't find that" />
         <SiteFooter />
       </div>
     );
   }
 }
 
-export default App;
+export default NotFound;
