@@ -1,0 +1,16 @@
+.site__header{
+  background: white;
+  box-shadow: 0 0.125rem 0.75rem rgba(0,0,0,0.125);
+  color: #3f3f3f;
+  padding: 1rem;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+.header__title{
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.header__subtitle{
+  font-weight: 300;
+}
