@@ -4,6 +4,7 @@ import { BrowserRouter, Match, Miss } from 'react-router';
 
 import App from './components/App';
 import Article from './components/Article';
+import Articles from './components/Articles';
 import NotFound from './components/NotFound';
 
 const Root = () => {
@@ -11,7 +12,8 @@ const Root = () => {
     <BrowserRouter>
       <div>
         <Match exactly pattern="/" component={App} />
-        <Match pattern="/article" component={Article} />
+        <Match exactly pattern="/articles/" component={Articles} />
+        <Match pattern="/article/:postId" component={Article} />
         <Miss component={NotFound} />
       </div>
     </BrowserRouter>
